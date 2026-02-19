@@ -19,7 +19,7 @@ function initTabs() {
 
     const btn = document.querySelector(`.tab-btn[data-tab="${target}"]`);
     if (btn) btn.classList.add('active');
-    const content = document.querySelector(`.tab-content[data-id="${target}"]`) || document.getElementById(target);
+    const content = document.getElementById(target);
     if (content) content.classList.add('active');
   }
 
@@ -28,23 +28,19 @@ function initTabs() {
       const target = btn.dataset.tab;
       history.replaceState(null, '', `#${target}`);
       switchTab(target);
+      window.scrollTo(0, 0);
     });
   });
 
-  // Activate tab from URL hash on load
-  const hash = window.location.hash.replace('#', '');
+  // Activate tab from hash captured before body was parsed (no scroll occurs)
+  const hash = window.__initialTab || '';
   if (hash && document.getElementById(hash)) {
-    // Temporarily remove the id so the browser can't auto-scroll to the element
-    const el = document.getElementById(hash);
-    el.setAttribute('data-id', hash);
-    el.removeAttribute('id');
     switchTab(hash);
-    // Restore id after browser's native hash-scroll pass, then scroll to top
-    requestAnimationFrame(() => {
-      el.id = hash;
-      el.removeAttribute('data-id');
+    // Restore hash in URL after browser's scroll pass is fully complete
+    setTimeout(() => {
+      history.replaceState(null, '', `#${hash}`);
       window.scrollTo(0, 0);
-    });
+    }, 50);
   }
 }
 

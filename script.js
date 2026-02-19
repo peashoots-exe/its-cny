@@ -13,17 +13,39 @@ function initTabs() {
   const tabBtns = document.querySelectorAll('.tab-btn');
   const tabContents = document.querySelectorAll('.tab-content');
 
+  function switchTab(target) {
+    tabBtns.forEach(b => b.classList.remove('active'));
+    tabContents.forEach(c => c.classList.remove('active'));
+
+    const btn = document.querySelector(`.tab-btn[data-tab="${target}"]`);
+    if (btn) btn.classList.add('active');
+    const content = document.querySelector(`.tab-content[data-id="${target}"]`) || document.getElementById(target);
+    if (content) content.classList.add('active');
+  }
+
   tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const target = btn.dataset.tab;
-
-      tabBtns.forEach(b => b.classList.remove('active'));
-      tabContents.forEach(c => c.classList.remove('active'));
-
-      btn.classList.add('active');
-      document.getElementById(target).classList.add('active');
+      history.replaceState(null, '', `#${target}`);
+      switchTab(target);
     });
   });
+
+  // Activate tab from URL hash on load
+  const hash = window.location.hash.replace('#', '');
+  if (hash && document.getElementById(hash)) {
+    // Temporarily remove the id so the browser can't auto-scroll to the element
+    const el = document.getElementById(hash);
+    el.setAttribute('data-id', hash);
+    el.removeAttribute('id');
+    switchTab(hash);
+    // Restore id after browser's native hash-scroll pass, then scroll to top
+    requestAnimationFrame(() => {
+      el.id = hash;
+      el.removeAttribute('data-id');
+      window.scrollTo(0, 0);
+    });
+  }
 }
 
 /* --- Language Toggle (Tab 2) --- */

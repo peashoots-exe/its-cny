@@ -69,12 +69,14 @@ async function loadList(url, containerId) {
 
 /* --- Card Rendering --- */
 function createCard(entry) {
-  const card = document.createElement('a');
+  const card = document.createElement(entry.url ? 'a' : 'div');
   card.className = 'card';
-  card.href = entry.url;
-  card.target = '_blank';
-  card.rel = 'noopener noreferrer';
-  card.title = `Visit ${entry.name}`;
+  if (entry.url) {
+    card.href = entry.url;
+    card.target = '_blank';
+    card.rel = 'noopener noreferrer';
+    card.title = `Visit ${entry.name}`;
+  }
 
   const screenshotHTML = entry.screenshot
     ? `<div class="card-screenshot">

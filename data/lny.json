@@ -16,5 +16,17 @@
         "url": "https://disneyland.disney.go.com/events-tours/lunar-new-year/",
         "screenshot": "screenshots/disney-lunar-new-year-2026.jpg",
         "note": ""
+    },
+    {
+        "name": "Northwestern",
+        "url": "",
+        "screenshot": "screenshots/northwestern-lny-2026.JPG",
+        "note": ""
+    },
+    {
+        "name": "WEE",
+        "url": "",
+        "screenshot": "screenshots/wee-lny-2026.JPG",
+        "note": ""
     }
 ]

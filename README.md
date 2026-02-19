@@ -13,9 +13,10 @@ A community-driven website that:
 
 The term **Chinese New Year** (春節) carries thousands of years of cultural heritage rooted in the Chinese lunisolar calendar, Chinese cosmology, and Chinese astronomical tradition. Recently, corporations and institutions have been rebranding it as "Lunar New Year" — a term that is:
 
-- **Scientifically inaccurate** (the Chinese calendar is lunisolar, not lunar)
-- **Historically rooted in colonial erasure** (originating from British colonial governance in Hong Kong)
-- **Culturally disrespectful** (it removes Chinese origin while still using the Chinese calendar)
+- **Scientifically inaccurate** (the new year date is calculated specifically on the Chinese lunisolar calendar, not lunar)
+- **Historically rooted in colonial erasure** (originating from British colonial governance in Hong Kong in 1968)
+- **Culturally disrespectful** (it culturally appropriates the real lunar new year used by Islamic communities, and purposefully removes Chinese origin in the name of "inclusion")
+- **Contradictory in practice** (institutions rebrand the holiday as "Lunar New Year" yet continue to use almost exclusively Chinese cultural elements — its red theme, 12 zodiac animals, red envelopes, lion dance — in their promotional materials and advertisements, undermining their own claim of inclusivity)
 
 This project advocates for preserving the correct name and educating people about why it matters.
 
@@ -23,7 +24,7 @@ This project advocates for preserving the correct name and educating people abou
 
 ## Features
 
-- **Company Archive** — Side-by-side documentation of companies that correctly use "Chinese New Year" vs. those using the problematic "Lunar New Year"
+- **Archive** — Side-by-side documentation of companies and institutions correctly use "Chinese New Year" vs. those using the problematic "Lunar New Year"
 - **Educational Article** — A well-sourced article explaining the history, science, and cultural significance behind the name, available in English and Traditional Chinese (繁體中文)
 
 ---

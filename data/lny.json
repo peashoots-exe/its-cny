@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Miu Miu",
+        "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/chinese-new-year-2026.html",
+        "screenshot": "screenshots/miumiu-chinese-new-year-2026.jpg",
+        "note": ""
+    },
+    {
+        "name": "Byredo",
+        "url": "https://www.byredo.com/us_en/c/lunar-new-year-selection",
+        "screenshot": "screenshots/byredo-lunar-new-year-selection.jpg",
+        "note": ""
+    },
+    {
+        "name": "Disney",
+        "url": "https://disneyland.disney.go.com/events-tours/lunar-new-year/",
+        "screenshot": "screenshots/disney-lunar-new-year-2026.jpg",
+        "note": ""
+    }
+]

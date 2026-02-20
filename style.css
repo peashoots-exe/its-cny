@@ -533,6 +533,37 @@ a:hover {
   display: block;
 }
 
+.article-figure figcaption {
+  padding: 0.6rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* Figure Gallery */
+.figure-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.figure-gallery .article-figure {
+  margin: 0;
+}
+
+.figure-gallery .article-figure img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 560px) {
+  .figure-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Credits */
 .article-credits {
   margin-top: 2.5rem;

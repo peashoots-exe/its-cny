@@ -13,10 +13,10 @@ A community-driven website that:
 
 The term **Chinese New Year** (春節) carries thousands of years of cultural heritage rooted in the Chinese lunisolar calendar, Chinese cosmology, and Chinese astronomical tradition. Recently, corporations and institutions have been rebranding it as "Lunar New Year" — a term that is:
 
-- **Scientifically inaccurate** (the new year date is calculated using the Chinese Calendar "農曆", which is lunisolar (not lunar). This date is determined scientifically based on the the TIMEZONE AND LONGITUDE OF CHINA)
+- **Scientifically inaccurate** (this date is the new year date on "農曆", the Chinese Calendar, which is NOT a lunar calendar). It is determined scientifically based on the TIMEZONE and LONGITUDE of China)
 - **Historically rooted in colonial erasure** (originating from British colonial governance in Hong Kong in 1968)
 - **Culturally disrespectful** (it culturally appropriates the real lunar new year used by Islamic communities, and purposefully removes Chinese origin in the name of "inclusion")
-- **Contradictory in practice** (institutions rebrand the holiday as "Lunar New Year" yet continue to use almost exclusively Chinese cultural elements — its red theme, 12 zodiac animals, red envelopes, lion dance — in their promotional materials and advertisements, undermining their own claim of inclusivity)
+- **Contradictory in practice** (institutions rebrand the holiday as "Lunar New Year" to target broader audiences yet continue to use almost exclusively Chinese cultural elements — such as its red theme, 12 zodiac animals, red envelopes, lion dance — in their promotional materials and advertisements, undermining their own claim of inclusivity)
 
 This project advocates for preserving the correct name and educating people about why it matters.
 

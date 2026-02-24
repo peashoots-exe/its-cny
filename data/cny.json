@@ -24,6 +24,12 @@
     "note": ""
   },
   {
+    "name": "FC Barcelona",
+    "url": "https://www.fcbarcelona.com/en/tickets-merchandising-barca",
+    "screenshot": "screenshots/fcbarcelona-cny-2026.jpg",
+    "note": ""
+  },
+  {
     "name": "Hong Kong Tourism Board",
     "url": "https://www.discoverhongkong.com/hk-eng/what-s-new/events/chinese-new-year.html",
     "screenshot": "screenshots/hongkong-tourism-board-chinese-new-year-2026.jpg",
@@ -36,15 +42,15 @@
     "note": ""
   },
   {
-    "name": "Vera Wang",
-    "url": "https://www.instagram.com/p/DU3a4-qDYcf/?hl=en&img_index=1",
-    "screenshot": "screenshots/vera-wang-cny-2026.jpg",
+    "name": "JJ Lin",
+    "url": "https://www.instagram.com/p/DUzmLHkkemM/",
+    "screenshot": "screenshots/jjlin-cny-2026.jpg",
     "note": ""
   },
   {
-    "name": "Independent",
-    "url": "",
-    "screenshot": "screenshots/independent-cny-2026.JPG",
+    "name": "Vera Wang",
+    "url": "https://www.instagram.com/p/DU3a4-qDYcf/?hl=en&img_index=1",
+    "screenshot": "screenshots/vera-wang-cny-2026.jpg",
     "note": ""
   }
 ]

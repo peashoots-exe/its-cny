@@ -57,6 +57,7 @@ function initLanguageToggle() {
 
       document.getElementById('article-en').style.display = (lang === 'en') ? '' : 'none';
       document.getElementById('article-tc').style.display = (lang === 'tc') ? '' : 'none';
+      document.getElementById('article-sc').style.display = (lang === 'sc') ? '' : 'none';
     });
   });
 }

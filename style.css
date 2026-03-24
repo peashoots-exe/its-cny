@@ -382,9 +382,8 @@ a:hover {
 .card-list {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 1rem;
-  columns: 1;
-  column-gap: 0.75rem;
 }
 
 /* Scrollbar: subtle by default, visible on hover */

@@ -307,7 +307,7 @@ a:hover {
   flex-shrink: 0;
 }
 
-.tab-btn:last-child {
+.tab-btn:first-child {
   flex-shrink: 1;
 }
 
@@ -1013,13 +1013,23 @@ a:hover {
     min-height: auto;
   }
 
+  .panel {
+    display: block;
+  }
+
+  .panel-header {
+    position: sticky;
+    top: 58px;
+    z-index: 50;
+  }
+
   .panel-correct {
     border-right: none;
     border-bottom: 1px solid var(--border);
   }
 
   .card-list {
-    max-height: none;
+    overflow: visible;
     columns: 1;
   }
 

@@ -1,66 +1,88 @@
 [
   {
     "name": "Kering",
+    "name_TC": "開雲集團",
+    "name_SC": "开云集团",
     "url": "https://www.kering.com/en/group/kering-highlights/chinese-new-year-2026-creativity-as-legacy-fortune-as-motion/",
     "screenshot": "screenshots/kering-chinese-new-year-2026-creativity-as-legacy-fortune-as-motion.jpg",
     "note": ""
   },
   {
     "name": "Hermès",
+    "name_TC": "愛馬仕",
+    "name_SC": "爱马仕",
     "url": "https://www.hermes.com/us/en/content/344638-lny-greeting-2026/",
     "screenshot": "screenshots/hermes-cny-greeting-2026.jpg",
     "note": ""
   },
   {
     "name": "Bvlgari",
+    "name_TC": "寶格麗",
+    "name_SC": "宝格丽",
     "url": "https://www.instagram.com/p/DU2mxJBCIW7/?hl=en",
     "screenshot": "screenshots/bvlgari-cny-2026.jpg",
     "note": ""
   },
   {
     "name": "Georgio Armani",
+    "name_TC": "喬治·亞曼尼",
+    "name_SC": "乔治·阿玛尼",
     "url": "https://www.instagram.com/p/DU2mbcrjB73/?img_index=1",
     "screenshot": "screenshots/armani-cny-2026.jpg",
     "note": ""
   },
   {
     "name": "FC Barcelona",
+    "name_TC": "巴塞隆納足球俱樂部",
+    "name_SC": "巴塞罗那足球俱乐部",
     "url": "https://www.fcbarcelona.com/en/tickets-merchandising-barca",
     "screenshot": "screenshots/fcbarcelona-cny-2026.jpg",
     "note": ""
   },
   {
     "name": "Hong Kong Tourism Board",
+    "name_TC": "香港旅遊發展局",
+    "name_SC": "香港旅游发展局",
     "url": "https://www.discoverhongkong.com/hk-eng/what-s-new/events/chinese-new-year.html",
     "screenshot": "screenshots/hongkong-tourism-board-chinese-new-year-2026.jpg",
     "note": ""
   },
   {
     "name": "Chinatown London",
+    "name_TC": "倫敦唐人街",
+    "name_SC": "伦敦唐人街",
     "url": "https://www.instagram.com/p/DU27VpgCBRR/?hl=en",
     "screenshot": "screenshots/chinatown-london-cny-2026.jpg",
     "note": ""
   },
   {
     "name": "Jackie Chan",
+    "name_TC": "成龍",
+    "name_SC": "成龙",
     "url": "https://www.instagram.com/p/DU18GHdEu-2/",
     "screenshot": "screenshots/jackiechan-cny-2026.jpg",
     "note": ""
   },
   {
     "name": "Lawrence Wong",
+    "name_TC": "黃循財",
+    "name_SC": "黄循财",
     "url": "https://x.com/LawrenceWongST/status/2023561759542718823",
     "screenshot": "screenshots/lawrence-wong-cny.jpg",
     "note": ""
   },
   {
     "name": "JJ Lin",
+    "name_TC": "林俊傑",
+    "name_SC": "林俊杰",
     "url": "https://www.instagram.com/p/DUzmLHkkemM/",
     "screenshot": "screenshots/jjlin-cny-2026.jpg",
     "note": ""
   },
   {
     "name": "Vera Wang",
+    "name_TC": "王薇薇",
+    "name_SC": "王薇薇",
     "url": "https://www.instagram.com/p/DU3a4-qDYcf/?hl=en&img_index=1",
     "screenshot": "screenshots/vera-wang-cny-2026.jpg",
     "note": ""

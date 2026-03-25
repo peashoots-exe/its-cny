@@ -4,7 +4,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initTabs();
-  initLanguageToggle();
   loadArchiveData();
 });
 
@@ -44,28 +43,10 @@ function initTabs() {
   }
 }
 
-/* --- Language Toggle (Tab 2) --- */
-function initLanguageToggle() {
-  const langBtns = document.querySelectorAll('.lang-btn');
-
-  langBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang;
-
-      langBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      document.getElementById('article-en').style.display = (lang === 'en') ? '' : 'none';
-      document.getElementById('article-tc').style.display = (lang === 'tc') ? '' : 'none';
-      document.getElementById('article-sc').style.display = (lang === 'sc') ? '' : 'none';
-    });
-  });
-}
-
 /* --- Archive Data Loading --- */
 function loadArchiveData() {
-  loadList('data/cny.json', 'cny-list');
-  loadList('data/lny.json', 'lny-list');
+  loadList('/data/cny.json', 'cny-list');
+  loadList('/data/lny.json', 'lny-list');
 }
 
 async function loadList(url, containerId) {
@@ -87,7 +68,16 @@ async function loadList(url, containerId) {
 }
 
 /* --- Card Rendering --- */
+const pageLang = document.documentElement.lang;
+
+function getLocalizedName(entry) {
+  if (pageLang === 'zh-TW' && entry.name_TC) return entry.name_TC;
+  if (pageLang === 'zh-CN' && entry.name_SC) return entry.name_SC;
+  return entry.name;
+}
+
 function createCard(entry) {
+  const displayName = getLocalizedName(entry);
   const card = document.createElement(entry.url ? 'a' : 'div');
   card.className = 'card';
   if (entry.url) {
@@ -97,14 +87,15 @@ function createCard(entry) {
     card.title = `Visit ${entry.name}`;
   }
 
+  const screenshotSrc = entry.screenshot ? '/' + entry.screenshot.replace(/^\//, '') : '';
   const screenshotHTML = entry.screenshot
     ? `<div class="card-screenshot">
-         <img src="${escapeHTML(entry.screenshot)}" alt="${escapeHTML(entry.name)}" loading="lazy"
+         <img src="${escapeHTML(screenshotSrc)}" alt="${escapeHTML(displayName)}" loading="lazy"
               onerror="this.parentElement.classList.add('no-image')">
-         <span class="card-placeholder">${escapeHTML(entry.name.charAt(0))}</span>
+         <span class="card-placeholder">${escapeHTML(displayName.charAt(0))}</span>
        </div>`
     : `<div class="card-screenshot no-image">
-         <span class="card-placeholder">${escapeHTML(entry.name.charAt(0))}</span>
+         <span class="card-placeholder">${escapeHTML(displayName.charAt(0))}</span>
        </div>`;
 
   const noteHTML = entry.note
@@ -114,7 +105,7 @@ function createCard(entry) {
   card.innerHTML = `
     ${screenshotHTML}
     <div class="card-info">
-      <span class="card-name">${escapeHTML(entry.name)}</span>
+      <span class="card-name">${escapeHTML(displayName)}</span>
       ${noteHTML}
     </div>
   `;

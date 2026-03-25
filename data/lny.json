@@ -1,54 +1,72 @@
 [
     {
         "name": "Miu Miu",
+        "name_TC": "Miu Miu",
+        "name_SC": "Miu Miu",
         "url": "https://www.miumiu.com/us/en/miumiu-club/special-projects/chinese-new-year-2026.html",
         "screenshot": "screenshots/miumiu-chinese-new-year-2026.jpg",
         "note": ""
     },
     {
         "name": "Disney",
+        "name_TC": "迪士尼",
+        "name_SC": "迪士尼",
         "url": "https://disneyland.disney.go.com/events-tours/lunar-new-year/",
         "screenshot": "screenshots/disney-lunar-new-year-2026.jpg",
         "note": ""
     },
     {
         "name": "Mandarin Oriental",
+        "name_TC": "文華東方",
+        "name_SC": "文华东方",
         "url": "https://www.linkedin.com/posts/mandarin-oriental-hotel-group_imafan-mandarinoriental-activity-7429343843181023233-X9eb",
         "screenshot": "screenshots/mandarin-lny-2026.jpg",
         "note": ""
     },
     {
         "name": "BBC",
+        "name_TC": "BBC",
+        "name_SC": "BBC",
         "url": "https://www.bbc.com/news/topics/c5jxdq95xm4t",
         "screenshot": "screenshots/bbc-lny-2026.jpg",
         "note": ""
     },
     {
         "name": "500px",
+        "name_TC": "500px",
+        "name_SC": "500px",
         "url": "https://www.instagram.com/p/DU3DZE2kqVz/?img_index=1",
         "screenshot": "screenshots/500px-lny-2026.jpg",
         "note": ""
     },
     {
         "name": "Moonbow Skin",
+        "name_TC": "Moonbow Skin",
+        "name_SC": "Moonbow Skin",
         "url": "https://www.instagram.com/p/DUoClL8jlx4/?img_index=1",
         "screenshot": "screenshots/moonbow-skin-lny-2026.jpg",
         "note": ""
     },
     {
         "name": "Elix Healing",
+        "name_TC": "Elix Healing",
+        "name_SC": "Elix Healing",
         "url": "https://www.instagram.com/p/DU2lNY4kWvJ/?img_index=1",
         "screenshot": "screenshots/elixhealing-lny-2026.jpg",
         "note": ""
     },
     {
         "name": "Northwestern",
+        "name_TC": "西北大學",
+        "name_SC": "西北大学",
         "url": "https://www.instagram.com/p/DU3Q56HEu9h/",
         "screenshot": "screenshots/northwestern-lny-2026.JPG",
         "note": ""
     },
     {
         "name": "WEE",
+        "name_TC": "WEE",
+        "name_SC": "WEE",
         "url": "",
         "screenshot": "screenshots/wee-lny-2026.JPG",
         "note": ""

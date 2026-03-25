@@ -304,6 +304,11 @@ a:hover {
   transition: all var(--transition);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.tab-btn:last-child {
+  flex-shrink: 1;
 }
 
 .tab-btn:hover {
@@ -686,6 +691,106 @@ a:hover {
 
 .highlight-box p:last-child {
   margin-bottom: 0;
+}
+
+/* Key Facts — GEO summary block */
+.key-facts {
+  background: linear-gradient(135deg, var(--sage-bg) 0%, rgba(184, 150, 80, 0.06) 100%);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--rose);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.key-facts h2 {
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+  color: var(--brown-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.key-facts h2::after {
+  display: none;
+}
+
+.key-facts ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.key-facts li {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 0.3rem;
+}
+
+.key-facts li strong {
+  color: var(--text-primary);
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-top: 3rem;
+}
+
+.faq-section h2 {
+  font-size: 1.55rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  color: var(--brown-dark);
+}
+
+.faq-section details {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 0.6rem;
+  background: var(--bg-card);
+  transition: box-shadow var(--transition);
+}
+
+.faq-section details[open] {
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-section summary {
+  padding: 0.85rem 1.15rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.faq-section summary::before {
+  content: '▸';
+  color: var(--rose);
+  font-size: 0.85rem;
+  transition: transform var(--transition);
+}
+
+.faq-section details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.faq-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-section details p {
+  padding: 0 1.15rem 1rem;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
 }
 
 /* Call to Action */
